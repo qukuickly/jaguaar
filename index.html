@@ -1,222 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1341671470760067');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1341671470760067&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jadugar Company - Premium Predictions</title>
     <style>
         *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
         body{
-            background:#0a0a16 url('https://wallpapercave.com/wp/wp11306538.jpg') center/cover fixed;
-            color:#fff;
             min-height:100vh;
-            position:relative
+            background:#0a0f1c;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            padding:15px;
+            color:#fff;
         }
-        body:before{
-            content:'';
-            position:absolute;
-            top:0;
-            left:0;
+        .wrapper{
             width:100%;
-            height:100%;
-            background:rgba(10,10,22,0.7);
-            z-index:0
-        }
-        .container{
-            max-width:500px;
-            margin:0 auto;
-            padding:20px 15px;
-            position:relative;
-            z-index:1;
+            max-width:400px;
+            background:#111827;
+            border-radius:20px;
+            padding:25px 20px;
+            border:1px solid rgba(255,255,255,0.1);
             text-align:center;
         }
-        .magic {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            color: #9C27B0;
+        .profile-img{
+            width:120px;
+            height:120px;
+            border-radius:50%;
+            overflow:hidden;
+            margin:0 auto 20px;
+            border:3px solid #9C27B0;
+            box-shadow:0 0 25px rgba(156,39,176,0.4);
         }
-        .title {
-            font-size: 2.2rem;
-            font-weight: bold;
-            color: #9C27B0;
-            text-shadow: 0 0 10px rgba(156, 39, 176, 0.5);
-            margin-bottom: 10px;
+        .profile-img img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
         }
-        .subtitle {
-            font-size: 1.1rem;
-            color: #fff;
-            margin-bottom: 30px;
+        h1{
+            font-size:26px;
+            font-weight:bold;
+            margin-bottom:10px;
+            color:#9C27B0;
         }
-        .profile-container {
-            margin: 25px 0;
+        .subtitle{
+            font-size:14px;
+            color:#ccc;
+            margin-bottom:25px;
         }
-        .profile-image {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #9C27B0;
-            box-shadow: 0 0 20px rgba(156, 39, 176, 0.5);
+        .points-box{
+            margin:20px auto;
+            max-width:320px;
         }
-        .features {
-            margin: 25px 0;
+        .point{
+            background:rgba(255,255,255,0.05);
+            padding:12px 15px;
+            font-size:15px;
+            border-radius:12px;
+            margin-bottom:10px;
+            border:1px solid rgba(156,39,176,0.2);
         }
-        .section-title {
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-            color: #9C27B0;
+        .cta{
+            display:block;
+            width:100%;
+            padding:16px 0;
+            background:linear-gradient(135deg,#9C27B0,#E91E63);
+            color:#fff;
+            font-size:17px;
+            font-weight:bold;
+            border-radius:12px;
+            text-decoration:none;
+            margin-top:15px;
+            box-shadow:0 10px 25px rgba(156,39,176,0.5);
+            transition:0.3s;
         }
-        .feature-list {
-            list-style: none;
-            max-width: 300px;
-            margin: 0 auto;
+        .cta:hover{
+            transform:translateY(-3px);
+            box-shadow:0 15px 30px rgba(156,39,176,0.7);
         }
-        .feature-item {
-            padding: 8px 0;
-            color: #fff;
-            text-align: center;
+        .note{
+            margin-top:15px;
+            font-size:12px;
+            color:#aaa;
         }
-        .feature-item:before {
-            content: "✓";
-            color: #4caf50;
-            font-weight: bold;
-            margin-right: 8px;
-        }
-        .cta-button {
-            display: block;
-            background: linear-gradient(45deg, #9C27B0, #E91E63);
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 50px;
-            padding: 16px 25px;
-            margin: 20px 0;
-            text-align: center;
-            width: 100%;
-            border: none;
-            font-size: 1.2rem;
-            box-shadow: 0 0 20px rgba(156, 39, 176, 0.7);
-            transition: all 0.3s ease;
-            animation: zoomInOut 2s ease-in-out infinite;
-        }
-        @keyframes zoomInOut {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-        .cta-button:hover {
-            animation: none;
-            transform: scale(1.07);
-            box-shadow: 0 0 25px rgba(156, 39, 176, 0.9);
-        }
-        .cta-text {
-            font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.9);
-            margin-top: 10px;
-        }
-        .footer {
-            margin-top: 25px;
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.7);
-        }
-        .urgency-text {
-            background: rgba(156, 39, 176, 0.2);
-            border: 1px solid rgba(156, 39, 176, 0.4);
-            border-radius: 8px;
-            padding: 8px;
-            margin: 15px 0;
-            font-weight: bold;
-            text-align: center;
-            font-size: 0.9rem;
-        }
-        .advertiser {
-            color: #fff;
-            font-size: 0.85rem;
-            margin-top: 5px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        }
-        .advertiser a {
-            color: #FFD700;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        @media (max-width: 500px) {
-            .title {
-                font-size: 1.8rem;
-            }
-            .profile-image {
-                width: 160px;
-                height: 160px;
-            }
+        @media (max-width:480px){
+            .wrapper{padding:20px 15px}
+            .profile-img{width:110px;height:110px}
+            h1{font-size:24px}
+            .point{font-size:14px}
+            .cta{font-size:16px}
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="magic">
-                ✨ ✨ ✨
-            </div>
-            <h1 class="title">JADUGAR COMPANY</h1>
-            <p class="subtitle">Expert in Cricket Predictions & Analysis 🔮</p>
-        </header>
-        
-        <div class="profile-container">
-            <img src="https://d1yei2z3i6k35z.cloudfront.net/13184094/692775a6b2666_47148080-b1e6-4ab0-8145-5f2281b77ecb.jpeg" alt="Jadugar Company" class="profile-image">
+    <div class="wrapper">
+        <div class="profile-img">
+            <img src="https://d1yei2z3i6k35z.cloudfront.net/13184094/692775a6b2666_47148080-b1e6-4ab0-8145-5f2281b77ecb.jpeg" alt="Jadugar Company">
         </div>
-        
-        <div class="features">
-            <h2 class="section-title">What You'll Get</h2>
-            <ul class="feature-list">
-                <li class="feature-item">Magical Toss Predictions</li>
-                <li class="feature-item">Accurate Match Forecasts</li>
-                <li class="feature-item">Expert Cricket Analysis</li>
-                <li class="feature-item">Live Match Updates</li>
-            </ul>
+
+        <h1>Jadugar Company</h1>
+        <p class="subtitle">Expert in Cricket Predictions & Analysis 🔮</p>
+
+        <div class="points-box">
+            <div class="point">Magical Toss Predictions</div>
+            <div class="point">Accurate Match Forecasts</div>
+            <div class="point">Expert Cricket Analysis</div>
+            <div class="point">Live Match Updates</div>
         </div>
-        
-        <div class="cta-section">
-            <div class="urgency-text">यह लिंक फिर उपलब्ध नहीं होगा</div>
-            <div class="advertiser">
-                ⇓ Click the Button Below & Join Now ⇓
-            </div>
-            <a href="https://t.me/+TZA0rSMW-x5kMDk9" class="cta-button">JOIN THE CHANNEL NOW</a>
-            <p class="cta-text">Get Magical Cricket Updates & Insights ⚡</p>
-        </div>
-        
-        <div class="footer">
-            <div class="advertiser">
-                Advertiser: <a href="https://t.me/quicklygrow">@quicklygrow</a>
-            </div>
+
+        <a href="https://t.me/+TZA0rSMW-x5kMDk9" class="cta">Join Telegram Channel</a>
+
+        <div class="note">
             Jadugar Company - Your Cricket Prediction Expert
         </div>
     </div>
 
     <script>
-        // Preload profile image for faster loading
+        // Ultra fast loading
         document.addEventListener('DOMContentLoaded', function() {
-            const profileImage = new Image();
-            profileImage.src = 'https://d1yei2z3i6k35z.cloudfront.net/13184094/692775a6b2666_47148080-b1e6-4ab0-8145-5f2281b77ecb.jpeg';
-            
-            const bgImage = new Image();
-            bgImage.src = 'https://wallpapercave.com/wp/wp11306538.jpg';
+            const img = new Image();
+            img.src = 'https://d1yei2z3i6k35z.cloudfront.net/13184094/692775a6b2666_47148080-b1e6-4ab0-8145-5f2281b77ecb.jpeg';
         });
     </script>
 </body>
